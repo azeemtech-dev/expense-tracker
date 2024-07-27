@@ -1,0 +1,78 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Changed to flex-start to align items from the top */
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+}
+
+h1 {
+  color: #ff6347;
+}
+
+.form input, .form select, .form button {
+  width: calc(100% - 22px);
+  margin: 10px 0;
+  padding: 10px;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.form button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.expense-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.expense-list li {
+  background-color: #f4f4f4;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  margin: 5px 0;
+  padding: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.expense-list li:hover {
+  background-color: #e2e2e2;
+  transform: translateX(5px);
+}
+
+.summary {
+  margin-top: 20px;
+}
+
+#expenseChart {
+  width: 100%;
+  height: 300px;
+}
